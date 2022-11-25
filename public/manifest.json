@@ -6,7 +6,7 @@
   "display": "standalone",
   "scope": "/",
   "start_url": "/",
-  "prefer_related_applications":"true",
+  "prefer_related_applications":true,
   "icons":[
     {
       "src":"maskable.png",

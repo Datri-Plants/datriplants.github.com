@@ -1,11 +1,12 @@
 {
+  "id":"1",
   "name": "DatriPlants",
   "short_name": "DatriPlants",
   "theme_color": "#000000",
   "background_color": "#ffffff",
   "display": "standalone",
   "scope": "/",
-  "start_url": "/",
+  "start_url": ".",
   "prefer_related_applications":true,
   "icons":[
     {

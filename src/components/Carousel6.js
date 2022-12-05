@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import Carousel from "react-bootstrap/Carousel";
-import imageThumbnail_1 from "../images/pexels-photo-2736497.jpeg";
-import imageThumbnail_2 from "../images/pexels-photo-1470168.jpeg";
+import imageThumbnail_1 from "../images/pexels-photo-403571.jpeg";
 import Image from "react-bootstrap/Image";
 
-function ControlledCarousel3() {
+function ControlledCarousel() {
   const [index, setIndex] = useState(0);
 
   const handleSelect = (selectedIndex, e) => {
@@ -20,9 +19,7 @@ function ControlledCarousel3() {
           alt="First slide"
           thumbnail="true"
         />
-        <Carousel.Caption>
-          <h3>First slide label</h3>
-        </Carousel.Caption>
+       
       </Carousel.Item>
       <Carousel.Item>
         <Image
@@ -32,9 +29,6 @@ function ControlledCarousel3() {
           thumbnail="true"
         />
 
-        <Carousel.Caption>
-          <h3>Second slide label</h3>
-        </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
         <Image
@@ -43,13 +37,9 @@ function ControlledCarousel3() {
           alt="Third slide"
           thumbnail="true"
         />
-
-        <Carousel.Caption>
-          <h3>Third slide label</h3>
-        </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
   );
 }
 
-export default ControlledCarousel3;
+export default ControlledCarousel;

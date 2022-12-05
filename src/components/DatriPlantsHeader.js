@@ -289,21 +289,10 @@ const DatriPlantsHeader = (props) => {
     </div>
   </section>
   <section className={`${styles['u-align-center']} ${styles['u-clearfix']} ${sectionTwoStyles['u-section-3']}`} id="sec-b9a6">
-    <div className={`${styles['u-sheet']} ${styles['u-clearfix']} ${sectionTwoStyles['u-sheet-1']}`}>
-      <h2 className={`${styles['u-text']} ${sectionTwoStyles['u-text-1']}`}>
-        Why we should be greening our homes with plants
-      </h2>
-      <p className={`${styles['u-text-body-color']} ${styles['u-text']} ${sectionTwoStyles['u-text-2']}`}>
-        Wellness can be fostered through the ‘living’ decor plants provide –
-        they absorb harmful chemicals and regulate humidity – and they’re an
-        inexpensive way to add instant colour and glamour to home interiors
-      </p>
-      
+    <div className={`${styles['u-sheet']} ${styles['u-clearfix']} ${sectionTwoStyles['u-sheet-1']}`}>  
       <p><ProductsLayout /></p>
-      
-      
       <a href="https://www.scmp.com/lifestyle/interiors-living/article/2126797/why-we-should-be-greening-our-homes-plants-top-trend-2018"
-        className={`${styles['u-border-2']} ${styles['u-border-grey-dark-1']} ${styles['u-btn']} ${styles['u-button-style']} ${sectionTwoStyles['u-btn-4']}`} target="_blank" rel="noreferrer">learn more</a>
+        className={`${styles['u-border-2']} ${styles['u-border-grey-dark-1']} ${styles['u-btn']} ${styles['u-button-style']} ${sectionTwoStyles['u-btn-4']}`} target="_blank" rel="noreferrer"> &emsp; learn more &emsp; </a>
     </div>
   </section>
         </div>

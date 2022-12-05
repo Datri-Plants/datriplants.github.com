@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import Carousel from "react-bootstrap/Carousel";
-import imageThumbnail_2 from "../images/pexels-photo-1470168.jpeg";
+import imageThumbnail_1 from "../images/pexels-photo-403571.jpeg";
 import Image from "react-bootstrap/Image";
 
-function ControlledCarousel2() {
+function ControlledCarousel() {
   const [index, setIndex] = useState(0);
 
   const handleSelect = (selectedIndex, e) => {
@@ -15,40 +15,31 @@ function ControlledCarousel2() {
       <Carousel.Item>
         <Image
           className="d-block w-100"
-          src={imageThumbnail_2}
+          src={imageThumbnail_1}
           alt="First slide"
           thumbnail="true"
         />
-        <Carousel.Caption>
-          <h3>First slide label</h3>
-        </Carousel.Caption>
+       
       </Carousel.Item>
       <Carousel.Item>
         <Image
           className="d-block w-100"
-          src={imageThumbnail_2}
+          src={imageThumbnail_1}
           alt="Second slide"
           thumbnail="true"
         />
 
-        <Carousel.Caption>
-          <h3>Second slide label</h3>
-        </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
         <Image
           className="d-block w-100"
-          src={imageThumbnail_2}
+          src={imageThumbnail_1}
           alt="Third slide"
           thumbnail="true"
         />
-
-        <Carousel.Caption>
-          <h3>Third slide label</h3>
-        </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
   );
 }
 
-export default ControlledCarousel2;
+export default ControlledCarousel;

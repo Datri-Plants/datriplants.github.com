@@ -19,9 +19,7 @@ function ControlledCarousel2() {
           alt="First slide"
           thumbnail="true"
         />
-        <Carousel.Caption>
-          <h3>First slide label</h3>
-        </Carousel.Caption>
+
       </Carousel.Item>
       <Carousel.Item>
         <Image
@@ -31,9 +29,6 @@ function ControlledCarousel2() {
           thumbnail="true"
         />
 
-        <Carousel.Caption>
-          <h3>Second slide label</h3>
-        </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
         <Image
@@ -43,9 +38,6 @@ function ControlledCarousel2() {
           thumbnail="true"
         />
 
-        <Carousel.Caption>
-          <h3>Third slide label</h3>
-        </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
   );

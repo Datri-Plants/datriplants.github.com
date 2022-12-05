@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Carousel from "react-bootstrap/Carousel";
-import imageThumbnail_1 from "../images/pexels-photo-2736497.jpeg";
+import imageThumbnail_1 from "../images/pexels-photo-1470168.jpeg";
 import Image from "react-bootstrap/Image";
 
 function ControlledCarousel() {
@@ -19,9 +19,7 @@ function ControlledCarousel() {
           alt="First slide"
           thumbnail="true"
         />
-        <Carousel.Caption>
-          <h3>First slide label</h3>
-        </Carousel.Caption>
+       
       </Carousel.Item>
       <Carousel.Item>
         <Image
@@ -31,9 +29,6 @@ function ControlledCarousel() {
           thumbnail="true"
         />
 
-        <Carousel.Caption>
-          <h3>Second slide label</h3>
-        </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
         <Image
@@ -42,10 +37,6 @@ function ControlledCarousel() {
           alt="Third slide"
           thumbnail="true"
         />
-
-        <Carousel.Caption>
-          <h3>Third slide label</h3>
-        </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
   );

@@ -25,7 +25,7 @@ function App() {
       </Header>
    
     </Fragment>
-    <BodyComponent />
+  
    <FooterComponent /> 
   
     </div>

@@ -9,14 +9,30 @@ function ResponsiveGrid1() {
   return (
     <Container>
       {/* Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop */}
-      <Row>
-        <Col xs={6} md={4}>
+      <Row className="justify-content-md-center">
+      <Col>
+      <h1>
+      <strong>Why we should be greening our homes with plants</strong>
+      </h1>
+      <p>
+      Wellness can be fostered through the ‘living’ decor plants provide – they absorb harmful chemicals and regulate humidity – and they’re an inexpensive way to add instant colour and glamour to home interiors
+      </p>      
+      </Col>
+      </Row>
+      <Row className="justify-content-md-center">
+        <Col xs={12} md={6}>
           <Carousel6 />
         </Col>
-        <Col xs={6} md={4}>
+        </Row>
+        <br/>
+        <Row className="justify-content-md-center">
+        <Col xs={12} md={6}>
           <Carousel5 />
         </Col>
-        <Col xs={6} md={4}>
+        </Row>
+        <br/>
+        <Row className="justify-content-md-center">
+        <Col xs={12} md={6}>
           <Carousel4 />
         </Col>
       </Row>
@@ -24,4 +40,4 @@ function ResponsiveGrid1() {
   );
 }
 
-export default ResponsiveGrid;
+export default ResponsiveGrid1;

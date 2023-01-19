@@ -20,22 +20,23 @@ function ResponsiveGrid() {
       </Col>
       </Row>
       <Row className="justify-content-md-center">
-        <Col xs={12} md={6}>
+      <Col xs={'auto'} md={{ span: 4 }}>
           <Carousel1 />
         </Col>
-        </Row>
-        <br/>
-        <Row className="justify-content-md-center">
-        <Col xs={12} md={6}>
+        
+        <br />
+        <Col xs={'auto'} md={{ span: 4 }}>
           <Carousel2 />
         </Col>
-        </Row>
-        <br/>
-        <Row className="justify-content-md-center">
-        <Col xs={12} md={6}>
+        
+        <br />
+        <Col xs={'auto'} md={{ span: 4 }}>
           <Carousel3 />
         </Col>
-      </Row>
+        
+        <br />
+        </Row>
+        <br/>
     </Container>
   );
 }

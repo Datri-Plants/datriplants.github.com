@@ -4,7 +4,7 @@
  * Copyright 2014-2021 Froala Labs
  */
  .u-section-1 {
-  background-image: linear-gradient(0deg, rgba(0,0,0,0.15), rgba(0,0,0,0.15)), url("../src/images/sx-min.jpg");
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.15), rgba(0,0,0,0.15));
   background-position: 50% 50%;
 }
 .fr-clearfix::after {

@@ -23,7 +23,7 @@ export default function HeroImage() {
           <Nav.Link eventKey="link-1">About</Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link href="/shop" eventKey="link-2">Shop</Nav.Link>
+          <Nav.Link href="/cart" eventKey="link-2">Shop</Nav.Link>
         </Nav.Item>
         <Nav.Item>
           <Nav.Link eventKey="link-3">
@@ -52,6 +52,8 @@ export default function HeroImage() {
                             <div className={`${styles["u-layout-row"]}`}>
                                 <div
                                     className={`${styles["u-container-style"]} ${styles["u-layout-cell"]} ${styles["u-left-cell"]} ${styles["u-size-30"]} ${styles["u-layout-cell-1"]}`}
+                                    style={{ position: 'relative',
+                                    top: 170}}
                                 >
                                     <div
                                         className={`${styles["u-container-layout"]} ${sectionTwoStyles["u-container-layout-1"]}`}
@@ -90,6 +92,8 @@ export default function HeroImage() {
                                 </div>
                                 <div
                                     className={`${homeStyles["u-container-style"]} ${homeStyles["u-layout-cell"]} ${homeStyles["u-right-cell"]} ${homeStyles["u-size-30"]} ${homeStyles["u-layout-cell-2"]}`}
+                                    style={{ position: 'relative',
+                                    top: 310}}
                                 >
                                     <div className={`${homeStyles['u-container-layout']} ${homeStyles['u-valign-top']} ${homeStyles['u-container-layout-2']}`}>
                                         <p

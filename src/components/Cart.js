@@ -1,9 +1,12 @@
+import ContactForm from "./Contact Form";
+
 const Cart = () => {
     return (
         <div>
             <h1>
-                HELLO CART
+                Contact Us
             </h1>
+            <ContactForm></ContactForm>
         </div>
     )
 }

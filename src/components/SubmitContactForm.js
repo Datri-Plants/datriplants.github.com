@@ -24,7 +24,6 @@ function useSubmitContactForm() {
     
     fetch(finalFormEndpoint, {
       method: 'POST',
-      mode:'no-cors',
       headers: {
         Accept: 'application/json',
         'Content-Type': 'application/json',
@@ -36,7 +35,7 @@ function useSubmitContactForm() {
           throw new Error(response.statusText);
         }
 
-        return response.body;
+        return response.json();
       })
       .then(() => {
         setMessage("We'll be in touch soon.");

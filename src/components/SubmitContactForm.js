@@ -13,23 +13,29 @@ function useSubmitContactForm() {
     const data = {
         firstName: e.target[0].value,
         lastName: e.target[1].value,
+        email: e.target[2].value,
+        phoneNumber: e.target[3].value,
+        address: e.target[4].value,
+        street: e.target[5].value,
+        city: e.target[6].value,
+        district: e.target[7].value,
+        postalCode: e.target[9].value,
     }
-    const stringifiedData= JSON.stringify(data);  
+    
     fetch(finalFormEndpoint, {
       method: 'POST',
-      mode: 'no-cors',
       headers: {
         Accept: 'application/json',
         'Content-Type': 'application/json',
       },
-      body: stringifiedData,
+      body: JSON.stringify(data),
     })
       .then((response) => {
         if (response.status !== 200) {
           throw new Error(response.statusText);
         }
 
-        return response.json();
+        return response.body;
       })
       .then(() => {
         setMessage("We'll be in touch soon.");

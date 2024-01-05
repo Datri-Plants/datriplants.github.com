@@ -1,12 +1,12 @@
-import ContactForm from "./Contact Form";
+import CartContactForm from "./CartContactForm";
 
 const Cart = () => {
     return (
         <div>
-            <h1>
+            <h1 style={{padding:"1rem"}}>
                 Contact Us
             </h1>
-            <ContactForm></ContactForm>
+            <CartContactForm></CartContactForm>
         </div>
     )
 }

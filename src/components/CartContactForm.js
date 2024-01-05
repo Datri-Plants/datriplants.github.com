@@ -4,56 +4,57 @@ import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
 import useSubmitContactForm from './SubmitContactForm';
 
-const FORM_ENDPOINT = "http://localhost:5000/orders";
+const FORM_ENDPOINT = "https://rosy-crawler-409720.el.r.appspot.com/users";
 
 function ContactForm() {
     const { handleSubmit, status, message } = useSubmitContactForm();
   return (
+
     <Form action={FORM_ENDPOINT}
     onSubmit={handleSubmit}
     method="POST">
-      <Row className="mb-3">
+      <Row className="mb-3" style={{padding: "1rem"}}>
         <Form.Group as={Col} controlId="formGridFirstName">
           <Form.Label>First Name</Form.Label>
-          <Form.Control type="firstName" placeholder="First Name" className="border border-success" />
+          <Form.Control type="firstName" className="border border-success col-sm-7" />
         </Form.Group>
 
         <Form.Group as={Col} controlId="formGridLastName">
           <Form.Label>Last Name</Form.Label>
-          <Form.Control type="lastName" placeholder="Last Name" className="border border-success" />
+          <Form.Control type="lastName" className="border border-success col-sm-7" />
         </Form.Group>
       </Row>
 
-      <Row className="mb-3">
+      <Row className="mb-3" style={{padding: "1rem"}} >
         <Form.Group as={Col} controlId="formGridEmail">
           <Form.Label>Email</Form.Label>
-          <Form.Control type="email" placeholder="Enter email" className="border border-success" />
+          <Form.Control type="email" className="border border-success col-sm-7" />
         </Form.Group>
         <Form.Group as={Col} controlId="formGridPhone">
           <Form.Label>Phone #</Form.Label>
-          <Form.Control type="phone" placeholder="Enter Phone #" className="border border-success" />
+          <Form.Control type="phone" className="border border-success col-sm-7" />
         </Form.Group>
       </Row>
-
+      <Row className="mb-3" style={{padding: "1rem"}}>
       <Form.Group className="mb-3" controlId="formGridAddress">
         <Form.Label>Address</Form.Label>
-        <Form.Control placeholder="1234 Main St" className="border border-success" />
+        <Form.Control className="border border-success col-sm-7" />
       </Form.Group>
 
       <Form.Group className="mb-3" controlId="formGridStreet">
         <Form.Label>Street</Form.Label>
-        <Form.Control placeholder="Apartment, studio, or floor" className="border border-success" />
+        <Form.Control className="border border-success col-sm-7" />
       </Form.Group>
-
-      <Row className="mb-3">
+      </Row>
+      <Row className="mb-3" style={{padding: "1rem"}}>
         <Form.Group as={Col} controlId="formGridCity">
           <Form.Label>City</Form.Label>
-          <Form.Control className="border border-success" />
+          <Form.Control className="border border-success col-sm-7" />
         </Form.Group>
     
         <Form.Group as={Col} controlId="formGridDistrict">
           <Form.Label>District</Form.Label>
-          <Form.Control className="border border-success"/>
+          <Form.Control className="border border-success col-sm-7"/>
         </Form.Group> 
 
         <Form.Group as={Col} controlId="formGridState">
@@ -66,7 +67,7 @@ function ContactForm() {
 
         <Form.Group as={Col} controlId="formGridPostalCode">
           <Form.Label>Postal Code</Form.Label>
-          <Form.Control  className="border border-success"/>
+          <Form.Control  className="border border-success col-sm-1"/>
         </Form.Group>
       </Row>
     <br/>
@@ -74,6 +75,7 @@ function ContactForm() {
         Submit
       </Button>
     </Form>
+    
   );
 }
 

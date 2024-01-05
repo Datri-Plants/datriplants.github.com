@@ -6,6 +6,7 @@ import { Fragment } from "react";
 import Header from "./components/Header";
 import FooterComponent from "./components/FooterComponent";
 import Cart from "./components/Cart";
+import ContactForm from "./components/ContactForm";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <div>
         <Routes>
           <Route path="/cart" element={<Cart />} />
+          <Route path="/contact" element={<ContactForm />} />
           <Route path="/home" element={<div>
             <Fragment>
               <Header>

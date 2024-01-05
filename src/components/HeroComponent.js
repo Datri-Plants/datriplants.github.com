@@ -26,7 +26,7 @@ export default function HeroImage() {
           <Nav.Link href="/cart" eventKey="link-2">Shop</Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link eventKey="link-3">
+          <Nav.Link href="/contact" eventKey="link-3">
             Contact
           </Nav.Link>
         </Nav.Item>

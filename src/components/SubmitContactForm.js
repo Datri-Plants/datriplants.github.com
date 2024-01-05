@@ -24,6 +24,7 @@ function useSubmitContactForm() {
     
     fetch(finalFormEndpoint, {
       method: 'POST',
+      mode:'no-cors',
       headers: {
         Accept: 'application/json',
         'Content-Type': 'application/json',

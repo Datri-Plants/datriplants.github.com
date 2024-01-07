@@ -11,11 +11,25 @@ function useSubmitOrderForm() {
 
     const finalFormEndpoint = e.target.action;
     const data = {
+      orders:[
+        {
+          itemName:'Money Plant',
+          itemCount:'7'
+        },
+        {
+          itemName:'Aloe Vera',
+          itemCount:'5'
+        }
+      ],
         firstName: e.target[0].value,
         lastName: e.target[1].value,
         email: e.target[2].value,
         phoneNumber: e.target[3].value,
-        message: e.target[4].value,
+        address: e.target[4].value,
+        street: e.target[5].value,
+        city: e.target[6].value,
+        district: e.target[7].value,
+        postalCode: e.target[9].value,
     }
     
     fetch(finalFormEndpoint, {
